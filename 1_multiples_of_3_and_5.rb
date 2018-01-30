@@ -7,6 +7,8 @@ def multiples_3_and_5(num)
 
 	for i in 1..(num-1) do 
 		sum += i if i % 3 == 0 || i % 5 == 0
+		# puts "I: #{i}"
+		# puts "SUM: #{sum}"
 	end
 	sum
 
@@ -14,3 +16,21 @@ end
 
 
 puts multiples_3_and_5(1000)
+
+# Using times
+
+def multiples_3_and_5_using_times(num)
+
+	sum = 0
+
+	(num).times do |i|
+		sum += i if i % 3 == 0 || i % 5 == 0
+		# puts "I: #{i}"
+		# puts "SUM: #{sum}"
+	end
+	sum
+
+end
+
+
+puts multiples_3_and_5_using_times(1000)
