@@ -11,7 +11,6 @@ def factorial_primes(num)
         puts "The new num is #{num}"
         if divisor * divisor > num
           return num
-          break
         end
     end
   end
