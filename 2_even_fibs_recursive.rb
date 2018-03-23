@@ -2,24 +2,16 @@
 # 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
-def even_fibs(num)
+def even_fibs_recursive(num, term1 = 1, term2 = 2, sum = 2)
+  
+  next_term = term1 + term2
+  return sum if next_term >= num
 
-  lower = 1
-  upper = 2
-  sum = 0
+  sum += next_term if next_term % 2 == 0
 
-  while true do
-    curr = upper
-    if curr > num
-      break
-    elsif curr % 2 == 0
-      sum += curr
-    end
-    upper = lower + curr
-    lower = curr
-  end
-  sum
+  even_fibs_recursive(num, term2, next_term, sum)
+
 end
 
-puts even_fibs(4000000)
-
+# even_fibs_recursive(89)
+puts even_fibs_recursive(4000000)

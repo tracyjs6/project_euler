@@ -4,25 +4,27 @@
 
 def smallest_multiple(num)
 
-	curr = num
+  curr = num
 
-	loop do
-		state = true
-		for i in num.downto(1)
-			if curr % i != 0
-				state = false
-				break
-			end
-		end
-		if state == true
-			return curr
-		else
-			curr += num
-		end
-	end
+  loop do
+    state = true
+    for i in num.downto(1)
+      if curr % i != 0
+        state = false
+        break
+      end
+    end
+    if state == true
+      return curr
+    else
+      curr += num
+    end
+  end
 
 end
 
 puts smallest_multiple(20)
+
+
 
 

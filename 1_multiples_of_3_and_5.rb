@@ -3,14 +3,12 @@
 
 def multiples_3_and_5(num)
 
-	sum = 0
+  sum = 0 
 
-	for i in 1..(num-1) do 
-		sum += i if i % 3 == 0 || i % 5 == 0
-		# puts "I: #{i}"
-		# puts "SUM: #{sum}"
-	end
-	sum
+  for i in 1..(num-1) do 
+  	sum += i if i % 3 == 0 || i % 5 == 0
+  end
+  sum
 
 end
 
@@ -21,14 +19,12 @@ puts multiples_3_and_5(1000)
 
 def multiples_3_and_5_using_times(num)
 
-	sum = 0
+  sum = 0
 
-	(num).times do |i|
-		sum += i if i % 3 == 0 || i % 5 == 0
-		# puts "I: #{i}"
-		# puts "SUM: #{sum}"
-	end
-	sum
+  (num).times do |i|
+    sum += i if i % 3 == 0 || i % 5 == 0
+  end
+  sum
 
 end
 

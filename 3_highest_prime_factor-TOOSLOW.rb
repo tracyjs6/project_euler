@@ -3,7 +3,7 @@
 
 #BELOW CODE TAKES WAAAAAY TOO LONG WITH THE NUMBER GIVEN - HAD TO FIND A BETTER WAY THAN LOOPING THROUGH THE PRIMES
 
-def factorial_primes(num)
+def factor_primes(num)
 
   ctr = num/2
 
@@ -25,7 +25,7 @@ def factorial_primes(num)
 
 end
 
-puts factorial_primes(13195)
+puts factor_primes(13195)
 
 
 
